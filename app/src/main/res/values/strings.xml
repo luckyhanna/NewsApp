@@ -6,7 +6,7 @@
     <string name="first_page">first</string>
     <string name="last_page">last</string>
     <string name="no_internet_connection">Please check your internet connection.</string>
-    <string name="no_news_found">There are currently no news for you. Please come back later and check out all the news!</string>
+    <string name="no_news_found">There are currently no news for you. \nPlease come back later \nand check out all the news!</string>
     <string name="empty_string"></string>
     <string name="separator">&#160;|&#160;</string>
 </resources>

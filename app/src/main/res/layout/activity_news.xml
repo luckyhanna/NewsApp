@@ -73,6 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
             tools:text="No data"/>
 
         <TextView

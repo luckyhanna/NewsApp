@@ -207,8 +207,10 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
         mReload.setVisibility(View.GONE);
         if (data != null && !data.isEmpty()) {
             mAdapter.addAll(data);
+            mPager.setVisibility(View.VISIBLE);
             mPageText.setText(String.valueOf(mCurrentPage));
         } else {
+            mPager.setVisibility(View.GONE);
             mEmptyView.setText(R.string.no_news_found);
         }
     }
