@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/pager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/first_page_btn"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/simple_button"
+            android:textAllCaps="false"
+            android:text="@string/first_page"/>
+        <Button
+            android:id="@+id/previous_page_btn"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/simple_button"
+            android:text="@string/previous"/>
+
+        <TextView
+            android:id="@+id/current_page_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/padding_8"
+            tools:text="1"/>
+
+        <Button
+            android:id="@+id/next_page_btn"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/simple_button"
+            android:text="@string/next"/>
+        <Button
+            android:id="@+id/last_page_btn"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/simple_button"
+            android:textAllCaps="false"
+            android:text="@string/last_page"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_layout"
+        android:layout_below="@+id/pager_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ListView
+            android:id="@+id/list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="@dimen/zero"/>
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            tools:text="No data"/>
+
+        <TextView
+            android:id="@+id/reload_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/empty_view"
+            android:paddingTop="@dimen/padding_6"
+            android:textSize="@dimen/text_18"
+            android:text="Tap here to retry"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_10">
+
+    <TextView
+        android:id="@+id/section_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/padding_4"
+        tools:text="Books"
+        android:background="@color/sectionColor"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/section_text"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@android:color/black"
+        android:fontFamily="serif"
+        tools:text="The greatest news of all in one place. Don't miss anything!"/>
+
+    <TextView
+        android:id="@+id/date_published"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        tools:text="2018-06-02 11:10"/>
+
+    <TextView
+        android:id="@+id/separator_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/date_published"
+        tools:text=" | "/>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/separator_text"
+        tools:text="Author Name" />
+
+</RelativeLayout>
