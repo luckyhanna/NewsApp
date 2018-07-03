@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Order By-->
+    <string-array name="settings_order_by_labels">
+        <item>@string/settings_order_by_newest_label</item>
+        <item>@string/settings_order_by_oldest_label</item>
+    </string-array>
+    <string-array name="settings_order_by_values">
+        <item>@string/settings_order_by_newest_value</item>
+        <item>@string/settings_order_by_oldest_value</item>
+    </string-array>
+
+    <!--PageSize-->
+    <string-array name="settings_page_labels">
+        <item>@string/settings_page_5_label</item>
+        <item>@string/settings_page_10_label</item>
+        <item>@string/settings_page_15_label</item>
+        <item>@string/settings_page_20_label</item>
+    </string-array>
+    <string-array name="settings_page_values">
+        <item>@string/settings_page_5_value</item>
+        <item>@string/settings_page_10_value</item>
+        <item>@string/settings_page_15_value</item>
+        <item>@string/settings_page_20_value</item>
+    </string-array>
+
+    <!--FromDate-->
+    <string-array name="settings_from_date_labels">
+        <item>@string/settings_from_date_0_label</item>
+        <item>@string/settings_from_date_3_label</item>
+        <item>@string/settings_from_date_7_label</item>
+    </string-array>
+    <string-array name="settings_from_date_values">
+        <item>@string/settings_from_date_0_value</item>
+        <item>@string/settings_from_date_3_value</item>
+        <item>@string/settings_from_date_7_value</item>
+    </string-array>
+</resources>

@@ -6,7 +6,66 @@
     <string name="first_page">first</string>
     <string name="last_page">last</string>
     <string name="no_internet_connection">Please check your internet connection.</string>
-    <string name="no_news_found">There are currently no news for you. \nPlease come back later \nand check out all the news!</string>
+    <string name="no_news_found">There are currently no news for you. \nTry changing your settings or come back later \nand check out all the news!</string>
     <string name="empty_string"></string>
     <string name="separator">&#160;|&#160;</string>
+
+    <!--Preferences-->
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Settings</string>
+
+    <!--Order By Preferences-->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_newest_value</string>
+
+    <!-- Label for order-by newest option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+
+    <!-- Label for order-by oldest option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+
+    <!--Page size Preferences-->
+    <string name="settings_page_label">Page size</string>
+    <string name="settings_page_key" translatable="false">page</string>
+    <string name="settings_page_default" translatable="false">@string/settings_page_10_value</string>
+
+    <!-- Label for page size 5 option [CHAR LIMIT=20] -->
+    <string name="settings_page_5_label">5</string>
+    <string name="settings_page_5_value" translatable="false">5</string>
+
+    <!-- Label for page size 10 option [CHAR LIMIT=20] -->
+    <string name="settings_page_10_label">10</string>
+    <string name="settings_page_10_value" translatable="false">10</string>
+
+    <!-- Label for page size 15 option [CHAR LIMIT=20] -->
+    <string name="settings_page_15_label">15</string>
+    <string name="settings_page_15_value" translatable="false">15</string>
+
+    <!-- Label for page size 20 option [CHAR LIMIT=20] -->
+    <string name="settings_page_20_label">20</string>
+    <string name="settings_page_20_value" translatable="false">20</string>
+
+
+    <!--From date Preferences-->
+    <string name="settings_from_date_label">Period</string>
+    <string name="settings_from_date_key" translatable="false">from-date</string>
+    <string name="settings_from_date_default" translatable="false">@string/settings_from_date_3_value</string>
+
+    <!-- Label for today option [CHAR LIMIT=20] -->
+    <string name="settings_from_date_0_label">Today</string>
+    <string name="settings_from_date_0_value" translatable="false">0</string>
+
+    <!-- Label for last 3 days option [CHAR LIMIT=20] -->
+    <string name="settings_from_date_3_label">Last 3 days</string>
+    <string name="settings_from_date_3_value" translatable="false">3</string>
+
+    <!-- Label for last week option [CHAR LIMIT=20] -->
+    <string name="settings_from_date_7_label">Last week</string>
+    <string name="settings_from_date_7_value" translatable="false">7</string>
+
+
 </resources>

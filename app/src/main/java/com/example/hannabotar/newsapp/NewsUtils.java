@@ -30,7 +30,7 @@ public class NewsUtils {
 
     public static final String LOG_TAG = NewsUtils.class.getSimpleName();
 
-    private static final String GUARDIAN_BASE_URL = "https://content.guardianapis.com/search?q=technology&format=json&order-by=newest&showfields=all&show-tags=all&show-references=all&api-key=2a37502e-d1fd-4be3-a8bc-4dfb17760157&page-size=10";
+    public static final String GUARDIAN_BASE_URL = "https://content.guardianapis.com/search";
 
     private static final SimpleDateFormat SDF = new SimpleDateFormat("MMM dd, yyyy, h:mm");
     private static final SimpleDateFormat SDF_URL = new SimpleDateFormat("yyyy-MM-dd");
@@ -40,17 +40,12 @@ public class NewsUtils {
 
     public static Integer totalPages = -1;
 
-    public static String getUrl(int page){
-        StringBuilder sb = new StringBuilder();
-        sb.append(GUARDIAN_BASE_URL);
+    public static String getDateStringForPreference(int xDays) {
         Calendar cal = Calendar.getInstance();
         cal.setTime(new Date());
-        cal.add(Calendar.DATE, -3);
-        Date threeDaysAgo = cal.getTime();
-        String dateString = formateUrlDate(threeDaysAgo);
-        sb.append("&from-date=").append(dateString);
-        sb.append("&page=").append(page);
-        return sb.toString();
+        cal.add(Calendar.DATE, -xDays);
+        Date xDaysAgo = cal.getTime();
+        return formateUrlDate(xDaysAgo);
     }
 
     public static List<News> fetchNews(String urlString) {
@@ -141,9 +136,7 @@ public class NewsUtils {
 
             JSONObject response = root.getJSONObject("response");
 
-            if (totalPages == -1) {
-                totalPages = response.getInt("pages");
-            }
+            totalPages = response.getInt("pages");
 
             JSONArray results = response.getJSONArray("results");
             for (int i = 0; i < results.length(); i++) {
